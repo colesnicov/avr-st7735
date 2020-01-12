@@ -242,7 +242,7 @@ void st7735_set_orientation(enum ST7735_ORIENTATION orientation) {
 				st7735_column_start = 0;
 			}
 			st7735_column_start = st7735_screen_column_start;
-			st7735_row_start = st7735_screen_row_start;
+			st7735_row_start = st7735_screen_row_start - 2;
 
 			break;
 
@@ -267,7 +267,7 @@ void st7735_set_orientation(enum ST7735_ORIENTATION orientation) {
 			}
 
 			st7735_height = st7735_default_width;
-			st7735_column_start = st7735_screen_row_start;
+			st7735_column_start = st7735_screen_row_start - 2;
 			st7735_row_start = st7735_screen_column_start;
 			break;
 	}
